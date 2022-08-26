@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container bg-light py-5">
+    <h1 class="text-center">
+        {{ title }}
+    </h1>
+    <div class="row">
+    <p><b>Nombre: </b>{{ pelicula.name }}</h2>
+    <p><b>Año de estreno: </b>{{ pelicula.premiere|date:"Y" }}</p>
+    <p><b>Director: </b>{{ pelicula.director }}</p>
+    <p><b>Descripcion: </b>{{pelicula.description}}</p>
+    </div>  
+    <div class="row"><div class="col-1 offset-9"><a href="{% url 'index' %}" class="btn btn-sm btn-danger">Volver</a></div></div>
+</div>
+{% endblock %}
