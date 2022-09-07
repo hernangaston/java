@@ -9,7 +9,7 @@ import java.util.*;
 
 public class MyProgram {
 
-    public static void main(String[] args) {
+    public static void main() {
         /*PROGRAMA QUE GENERA UN ARCHIVO DE INFORME A PARTIR DE UN ARCHIVO DE TEXTO*/
 
         String nombreArchi = "src/Ejercicios789/text.txt";
